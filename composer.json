@@ -1,10 +1,20 @@
 {
+    "name": "php-bug-catcher/skeleton",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
+    "description": "Project template for starting your new project based on the Bug Catcher",
+    "homepage": "https://github.com/php-bug-catcher/bug-catcher",
+    "keywords": [
+        "symfony",
+        "bug-catcher",
+        "logview",
+        "web-application",
+        "project-template"
+    ],
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.2",
+        "php": ">=8.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/dbal": "^3",
