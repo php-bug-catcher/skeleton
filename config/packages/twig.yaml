@@ -1,5 +1,9 @@
 twig:
+    form_themes: [ '@EasyAdmin/symfony-form-themes/bootstrap_5_layout.html.twig' ]
     file_name_pattern: '*.twig'
+    globals:
+        logo: 'default'
+        app_name: 'Bug Catcher'
 
 when@test:
     twig:

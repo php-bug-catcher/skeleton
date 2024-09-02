@@ -24,6 +24,9 @@ doctrine:
                 alias: App
         controller_resolver:
             auto_mapping: false
+        dql:
+            string_functions:
+                TYPE: BugCatcher\Extension\DQL\TypeFunction
 
 when@test:
     doctrine:
