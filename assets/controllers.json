@@ -18,6 +18,12 @@
                 "enabled": false,
                 "fetch": "eager"
             }
+        },
+      "@tito10047/persistent-state-bundle": {
+        "selection": {
+          "enabled": true,
+          "fetch": "eager"
+        }
         }
     },
     "entrypoints": []

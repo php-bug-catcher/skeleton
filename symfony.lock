@@ -381,6 +381,9 @@
             "webpack.config.js"
         ]
     },
+    "tito10047/persistent-state-bundle": {
+        "version": "0.1.2"
+    },
     "twig/extra-bundle": {
         "version": "v3.12.0"
     },
