@@ -39,6 +39,13 @@ when@prod:
         orm:
             auto_generate_proxy_classes: false
             proxy_dir: '%kernel.build_dir%/doctrine/orm/Proxies'
+            # Configuring metadata_cache_driver explicitly skips doctrine-bundle's
+            # DoctrineMetadataCacheWarmer. That warmer runs after the router warmer,
+            # which loads API Platform routes and therefore the entity metadata, and
+            # it then aborts cache:clear with "must load metadata first".
+            metadata_cache_driver:
+                type: pool
+                pool: doctrine.system_cache_pool
             query_cache_driver:
                 type: pool
                 pool: doctrine.system_cache_pool
