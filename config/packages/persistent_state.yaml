@@ -1,0 +1,13 @@
+# The dashboard's log list is a selectable list of Record entities, and it reads the selection back
+# through the "default" selection manager. That manager's stock transformer identifies scalars only,
+# so without this the list dies with "ScalarValueTransformer::getIdentifier(): Return value must be
+# of type string|int, BugCatcher\Entity\RecordLog returned" as soon as there is a row in it.
+#
+# The bundle prepends the same thing from 2.0.1 on; it is written out here as well so this template
+# works with the version its composer.lock pins, and so the transformer is somewhere you can see and
+# replace it. Configuration here is merged after what the bundle prepends, so this one wins.
+persistent_state:
+  selection:
+    managers:
+      default:
+        transformer: '@app.persistent_state.record_transformer'

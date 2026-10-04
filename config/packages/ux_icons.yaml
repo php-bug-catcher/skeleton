@@ -1,0 +1,9 @@
+ux_icons:
+  iconify:
+    # Every icon the dashboard renders is committed under assets/icons, so no page render reaches
+    # out to api.iconify.design. Leave this off: with on-demand downloads enabled, an icon nobody
+    # committed still draws on your machine and turns into a request per render in production - and
+    # into a blank space the day iconify.design is unreachable.
+    #
+    # Add one with: php bin/console ux:icons:import <set>:<name>
+    on_demand: false

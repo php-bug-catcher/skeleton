@@ -21,4 +21,5 @@ return [
     ApiPlatform\Symfony\Bundle\ApiPlatformBundle::class => ['all' => true],
     BugCatcher\BugCatcherBundle::class => ['all' => true],
     Tito10047\PersistentStateBundle\PersistentStateBundle::class => ['all' => true],
+    Symfony\AI\McpBundle\McpBundle::class => ['all' => true],
 ];

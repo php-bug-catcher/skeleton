@@ -20,5 +20,16 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
+    # Names a Record by its uuid for the dashboard's selectable log list - see
+    # config/packages/persistent_state.yaml, which is what points the selection manager at it.
+    app.persistent_state.record_transformer:
+        class: Tito10047\PersistentStateBundle\Transformer\ObjectIdValueTransformer
+        autowire: false
+        autoconfigure: false
+        arguments:
+            $class: BugCatcher\Entity\Record
+        tags:
+            - 'persistent_state.preference.value_transformer'
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

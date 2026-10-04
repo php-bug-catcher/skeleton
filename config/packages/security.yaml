@@ -12,6 +12,13 @@ security:
         api:
             pattern: ^/api/
             stateless: true
+        # The MCP endpoint authenticates with a bearer token read from MCP_ACCESS_TOKEN. The handler
+        # fails closed: with that variable unset every request is refused.
+        mcp:
+            pattern: ^/mcp
+            stateless: true
+            access_token:
+                token_handler: BugCatcher\Security\McpAccessTokenHandler
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
@@ -36,6 +43,7 @@ security:
     access_control:
         - { path: ^/login$, role: PUBLIC_ACCESS }
         - { path: ^/api, roles: PUBLIC_ACCESS }
+        - { path: ^/mcp, roles: ROLE_MCP }
         - { path: ^/admin, roles: ROLE_ADMIN }
         - { path: ^/detail, roles: ROLE_DEVELOPER }
         - { path: ^/_components/LogList/clearAll, roles: ROLE_DEVELOPER }
@@ -45,6 +53,8 @@ security:
         ROLE_ADMIN: ROLE_DEVELOPER
         ROLE_DEVELOPER: ROLE_CUSTOMER
         ROLE_CUSTOMER: ROLE_USER
+        # the MCP client resolves and archives records, which is what a developer may do
+        ROLE_MCP: ROLE_DEVELOPER
 
 when@test:
     security:

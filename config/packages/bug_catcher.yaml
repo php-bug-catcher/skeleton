@@ -1,0 +1,25 @@
+# Every key below is the bundle default, written out so you can see what there is to change.
+# The full reference is `php bin/console config:dump-reference bug_catcher`.
+bug_catcher:
+  # 'default', 'blue', 'green' or 'red' - picks the logo and favicon set
+  logo: 'default'
+  app_name: 'Bug Catcher'
+  # seconds between dashboard polls
+  refresh_interval: 15
+
+  # Performance monitoring. Nothing happens here until something ships buckets to
+  # POST /api/perf_buckets - that collector is a package of its own,
+  # php-bug-catcher/perf-collector, installed on the machine you want to measure.
+  # Turn a project's own `perfEnabled` checkbox on in /admin to give it a latency row on the
+  # dashboard. See vendor/php-bug-catcher/bug-catcher/_docs/performance.md
+  perf:
+    enabled: true
+
+  mcp:
+    # resolves to null when MCP_ACCESS_TOKEN is unset, and a null token refuses every request
+    access_token: '%env(default::MCP_ACCESS_TOKEN)%'
+    # the record types the MCP tools may read and resolve. Deliberately separate from
+    # dashboard_list_items: an AI holding the token can close what it finds.
+    record_types:
+      - BugCatcher\Entity\RecordLog
+      - BugCatcher\Entity\RecordLogTrace

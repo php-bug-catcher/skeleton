@@ -9,8 +9,11 @@ doctrine:
         profiling_collect_backtrace: '%kernel.debug%'
         use_savepoints: true
     orm:
-        auto_generate_proxy_classes: true
-        enable_lazy_ghost_objects: true
+        # Not optional for Bug Catcher. The generated lazy-ghost proxies are subclasses, and
+        # PerfBucket is final, so the prod proxy warmer aborts cache:clear with "Cannot generate
+        # lazy ghost: class BugCatcher\Entity\PerfBucket is final". PHP's own lazy objects need no
+        # subclass; the bundle requires PHP 8.4, so they are always available.
+        enable_native_lazy_objects: true
         report_fields_where_declared: true
         validate_xml_mapping: true
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
@@ -37,8 +40,6 @@ when@test:
 when@prod:
     doctrine:
         orm:
-            auto_generate_proxy_classes: false
-            proxy_dir: '%kernel.build_dir%/doctrine/orm/Proxies'
             # Configuring metadata_cache_driver explicitly skips doctrine-bundle's
             # DoctrineMetadataCacheWarmer. That warmer runs after the router warmer,
             # which loads API Platform routes and therefore the entity metadata, and
