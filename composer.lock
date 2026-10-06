@@ -492,6 +492,58 @@
       "time": "2025-11-22T12:18:15+00:00"
     },
     {
+      "name": "brendt/php-sparkline",
+      "version": "2.0.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/brendt/php-sparkline.git",
+        "reference": "a8cbd21dd353e1bbbb619858148fecb9dd7437dc"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/brendt/php-sparkline/zipball/a8cbd21dd353e1bbbb619858148fecb9dd7437dc",
+        "reference": "a8cbd21dd353e1bbbb619858148fecb9dd7437dc",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^8.1",
+        "ramsey/uuid": "^4.6"
+      },
+      "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.13",
+        "larapack/dd": "^1.1",
+        "phpunit/phpunit": "^9.5"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Brendt\\SparkLine\\": "src"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Brent Roose",
+          "email": "brendt@stitcher.io",
+          "role": "Developer"
+        }
+      ],
+      "description": "Generate sparkline SVGs in PHP",
+      "homepage": "https://github.com/brendt/php-sparkline",
+      "keywords": [
+        "brendt",
+        "php-sparkline"
+      ],
+      "support": {
+        "issues": "https://github.com/brendt/php-sparkline/issues",
+        "source": "https://github.com/brendt/php-sparkline/tree/2.0.1"
+      },
+      "time": "2025-10-09T04:54:28+00:00"
+    },
+    {
       "name": "brick/math",
       "version": "1.0.0",
       "source": {
@@ -1925,202 +1977,6 @@
       "time": "2025-03-06T22:45:56+00:00"
     },
     {
-      "name": "illuminate/collections",
-      "version": "v11.51.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/illuminate/collections.git",
-        "reference": "856b1da953e46281ba61d7c82d337072d3ee1825"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/illuminate/collections/zipball/856b1da953e46281ba61d7c82d337072d3ee1825",
-        "reference": "856b1da953e46281ba61d7c82d337072d3ee1825",
-        "shasum": ""
-      },
-      "require": {
-        "illuminate/conditionable": "^11.0",
-        "illuminate/contracts": "^11.0",
-        "illuminate/macroable": "^11.0",
-        "php": "^8.2"
-      },
-      "suggest": {
-        "symfony/var-dumper": "Required to use the dump method (^7.0)."
-      },
-      "type": "library",
-      "extra": {
-        "branch-alias": {
-          "dev-master": "11.x-dev"
-        }
-      },
-      "autoload": {
-        "files": [
-          "functions.php",
-          "helpers.php"
-        ],
-        "psr-4": {
-          "Illuminate\\Support\\": ""
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Taylor Otwell",
-          "email": "taylor@laravel.com"
-        }
-      ],
-      "description": "The Illuminate Collections package.",
-      "homepage": "https://laravel.com",
-      "support": {
-        "issues": "https://github.com/laravel/framework/issues",
-        "source": "https://github.com/laravel/framework"
-      },
-      "time": "2025-03-24T11:54:20+00:00"
-    },
-    {
-      "name": "illuminate/conditionable",
-      "version": "v11.51.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/illuminate/conditionable.git",
-        "reference": "319b717e0587bd7c8a3b44464f0e27867b4bcda9"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/illuminate/conditionable/zipball/319b717e0587bd7c8a3b44464f0e27867b4bcda9",
-        "reference": "319b717e0587bd7c8a3b44464f0e27867b4bcda9",
-        "shasum": ""
-      },
-      "require": {
-        "php": "^8.0.2"
-      },
-      "type": "library",
-      "extra": {
-        "branch-alias": {
-          "dev-master": "11.x-dev"
-        }
-      },
-      "autoload": {
-        "psr-4": {
-          "Illuminate\\Support\\": ""
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Taylor Otwell",
-          "email": "taylor@laravel.com"
-        }
-      ],
-      "description": "The Illuminate Conditionable package.",
-      "homepage": "https://laravel.com",
-      "support": {
-        "issues": "https://github.com/laravel/framework/issues",
-        "source": "https://github.com/laravel/framework"
-      },
-      "time": "2025-03-24T11:54:20+00:00"
-    },
-    {
-      "name": "illuminate/contracts",
-      "version": "v11.51.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/illuminate/contracts.git",
-        "reference": "4787042340aae19a7ea0fa82f4073c4826204a48"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/illuminate/contracts/zipball/4787042340aae19a7ea0fa82f4073c4826204a48",
-        "reference": "4787042340aae19a7ea0fa82f4073c4826204a48",
-        "shasum": ""
-      },
-      "require": {
-        "php": "^8.2",
-        "psr/container": "^1.1.1|^2.0.1",
-        "psr/simple-cache": "^1.0|^2.0|^3.0"
-      },
-      "type": "library",
-      "extra": {
-        "branch-alias": {
-          "dev-master": "11.x-dev"
-        }
-      },
-      "autoload": {
-        "psr-4": {
-          "Illuminate\\Contracts\\": ""
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Taylor Otwell",
-          "email": "taylor@laravel.com"
-        }
-      ],
-      "description": "The Illuminate Contracts package.",
-      "homepage": "https://laravel.com",
-      "support": {
-        "issues": "https://github.com/laravel/framework/issues",
-        "source": "https://github.com/laravel/framework"
-      },
-      "time": "2025-11-27T16:16:07+00:00"
-    },
-    {
-      "name": "illuminate/macroable",
-      "version": "v11.51.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/illuminate/macroable.git",
-        "reference": "e1cb9e51b9ed5d3c9bc1ab431d0a52fe42a990ed"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/illuminate/macroable/zipball/e1cb9e51b9ed5d3c9bc1ab431d0a52fe42a990ed",
-        "reference": "e1cb9e51b9ed5d3c9bc1ab431d0a52fe42a990ed",
-        "shasum": ""
-      },
-      "require": {
-        "php": "^8.2"
-      },
-      "type": "library",
-      "extra": {
-        "branch-alias": {
-          "dev-master": "11.x-dev"
-        }
-      },
-      "autoload": {
-        "psr-4": {
-          "Illuminate\\Support\\": ""
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Taylor Otwell",
-          "email": "taylor@laravel.com"
-        }
-      ],
-      "description": "The Illuminate Macroable package.",
-      "homepage": "https://laravel.com",
-      "support": {
-        "issues": "https://github.com/laravel/framework/issues",
-        "source": "https://github.com/laravel/framework"
-      },
-      "time": "2024-06-28T20:10:30+00:00"
-    },
-    {
       "name": "kregel/exception-probe",
       "version": "v1.0.0",
       "source": {
@@ -2710,21 +2566,22 @@
     },
     {
       "name": "php-bug-catcher/bug-catcher",
-      "version": "v2.0.0",
+      "version": "v2.4.0",
       "source": {
         "type": "git",
         "url": "https://github.com/php-bug-catcher/bug-catcher.git",
-        "reference": "a98b6125ba33b7a3817275d6fc320119b43b5640"
+        "reference": "4c1623af8d32242c98a051c7a31dd8446ca9d0f8"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/php-bug-catcher/bug-catcher/zipball/a98b6125ba33b7a3817275d6fc320119b43b5640",
-        "reference": "a98b6125ba33b7a3817275d6fc320119b43b5640",
+        "url": "https://api.github.com/repos/php-bug-catcher/bug-catcher/zipball/4c1623af8d32242c98a051c7a31dd8446ca9d0f8",
+        "reference": "4c1623af8d32242c98a051c7a31dd8446ca9d0f8",
         "shasum": ""
       },
       "require": {
         "api-platform/core": "^4.1.30",
         "atelier/chart": "^0.7",
+        "brendt/php-sparkline": "^2.0",
         "easycorp/easyadmin-bundle": "^4.10",
         "kregel/exception-probe": "^1.0",
         "nyholm/psr7": "^1.8",
@@ -2756,7 +2613,6 @@
         "tempest/highlight": "^2.28",
         "tito10047/doctrine-transaction": "^0.1.1",
         "tito10047/persistent-state-bundle": "^0.1.2",
-        "tito10047/php-sparkline": "^1.0",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/string-extra": "^3.10",
         "twig/twig": "^v3.26.0",
@@ -2799,9 +2655,9 @@
       "description": "Catch all bugs from all your applications in one place",
       "support": {
         "issues": "https://github.com/php-bug-catcher/bug-catcher/issues",
-        "source": "https://github.com/php-bug-catcher/bug-catcher/tree/v2.0.0"
+        "source": "https://github.com/php-bug-catcher/bug-catcher/tree/v2.4.0"
       },
-      "time": "2026-10-04T06:06:30+00:00"
+      "time": "2026-10-05T14:33:03+00:00"
     },
     {
       "name": "php-http/discovery",
@@ -3689,57 +3545,6 @@
       "time": "2024-09-11T13:17:53+00:00"
     },
     {
-      "name": "psr/simple-cache",
-      "version": "3.0.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/php-fig/simple-cache.git",
-        "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/764e0b3939f5ca87cb904f570ef9be2d78a07865",
-        "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865",
-        "shasum": ""
-      },
-      "require": {
-        "php": ">=8.0.0"
-      },
-      "type": "library",
-      "extra": {
-        "branch-alias": {
-          "dev-master": "3.0.x-dev"
-        }
-      },
-      "autoload": {
-        "psr-4": {
-          "Psr\\SimpleCache\\": "src/"
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "PHP-FIG",
-          "homepage": "https://www.php-fig.org/"
-        }
-      ],
-      "description": "Common interfaces for simple caching",
-      "keywords": [
-        "cache",
-        "caching",
-        "psr",
-        "psr-16",
-        "simple-cache"
-      ],
-      "support": {
-        "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
-      },
-      "time": "2021-10-29T13:26:27+00:00"
-    },
-    {
       "name": "ramsey/collection",
       "version": "2.1.1",
       "source": {
@@ -3892,60 +3697,6 @@
         "source": "https://github.com/ramsey/uuid/tree/4.9.4"
       },
       "time": "2026-09-16T11:39:30+00:00"
-    },
-    {
-      "name": "spatie/period",
-      "version": "2.4.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/spatie/period.git",
-        "reference": "85fbbea7b24fdff0c924aeed5b109be93c025850"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/spatie/period/zipball/85fbbea7b24fdff0c924aeed5b109be93c025850",
-        "reference": "85fbbea7b24fdff0c924aeed5b109be93c025850",
-        "shasum": ""
-      },
-      "require": {
-        "php": "^8.0"
-      },
-      "require-dev": {
-        "larapack/dd": "^1.1",
-        "nesbot/carbon": "^2.63",
-        "pestphp/pest": "^1.22",
-        "phpunit/phpunit": "^9.5",
-        "spatie/ray": "^1.31"
-      },
-      "type": "library",
-      "autoload": {
-        "psr-4": {
-          "Spatie\\Period\\": "src"
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Brent Roose",
-          "email": "brent@spatie.be",
-          "homepage": "https://spatie.be",
-          "role": "Developer"
-        }
-      ],
-      "description": "Complex period comparisons",
-      "homepage": "https://github.com/spatie/period",
-      "keywords": [
-        "period",
-        "spatie"
-      ],
-      "support": {
-        "issues": "https://github.com/spatie/period/issues",
-        "source": "https://github.com/spatie/period/tree/2.4.0"
-      },
-      "time": "2023-02-20T14:31:09+00:00"
     },
     {
       "name": "symfony/asset",
@@ -10885,59 +10636,6 @@
         "source": "https://github.com/tito10047/persistent-state-bundle/tree/0.1.5"
       },
       "time": "2026-07-18T06:37:07+00:00"
-    },
-    {
-      "name": "tito10047/php-sparkline",
-      "version": "1.0.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/tito10047/php-sparkline.git",
-        "reference": "e34602b8ba784c8ee1c87a9845dc0e30e13b27b7"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/tito10047/php-sparkline/zipball/e34602b8ba784c8ee1c87a9845dc0e30e13b27b7",
-        "reference": "e34602b8ba784c8ee1c87a9845dc0e30e13b27b7",
-        "shasum": ""
-      },
-      "require": {
-        "illuminate/collections": "^9.43|^10.0|^11.0",
-        "php": "^8.1",
-        "ramsey/uuid": "^4.6",
-        "spatie/period": "^2.3"
-      },
-      "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.13",
-        "larapack/dd": "^1.1",
-        "phpunit/phpunit": "^9.5"
-      },
-      "type": "library",
-      "autoload": {
-        "psr-4": {
-          "Brendt\\SparkLine\\": "src"
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Brent Roose",
-          "email": "brendt@stitcher.io",
-          "role": "Developer"
-        }
-      ],
-      "description": "Generate sparkline SVGs in PHP",
-      "homepage": "https://github.com/brendt/php-sparkline",
-      "keywords": [
-        "brendt",
-        "php-sparkline"
-      ],
-      "support": {
-        "source": "https://github.com/tito10047/php-sparkline/tree/1.0.0"
-      },
-      "time": "2024-06-10T13:04:15+00:00"
     },
     {
       "name": "twig/extra-bundle",
